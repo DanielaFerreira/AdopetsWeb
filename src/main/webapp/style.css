@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/03/2019, 15:57:31
+    Author     : daniela
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+/* navigation */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.btn-cadastro {
+    font-weight: bold;
+    border-color: white;
+}
+
+.btn-cadastro:hover {
+    background-color: white;
+    text-shadow: none!important;
+    color: black!important;
+    font-weight: normal ;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-weight: normal;
+}
+
+.parallax {
+    background-image: url(./img/fundo1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.carousel{
+
+}
+
+.caption {
+    text-shadow: 2px 2px 13px black;
+}
+
+.caption h1 {
+    font-size: 61px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 16px;
+}
+
+.caption p {
+    font-size: 32px;
+    padding-bottom: 26px;
+}
