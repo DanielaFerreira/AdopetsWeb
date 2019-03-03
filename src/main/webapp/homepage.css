@@ -10,7 +10,7 @@ and open the template in the editor.
 
 .carousel-item{
     height: 100vh;
-    min-height: 300px;
+    min-height: 100px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     background-size: cover;
@@ -33,8 +33,6 @@ and open the template in the editor.
 }
 
 .carousel-caption p{
-
-    margin: auto;
     font-size: 18px;
     line-height: 1.9px;
 }
