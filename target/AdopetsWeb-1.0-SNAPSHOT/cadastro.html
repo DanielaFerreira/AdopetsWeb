@@ -22,32 +22,39 @@ and open the template in the editor.
         </header>
 
         <section class="container-fluid bg">
-            <form class="row justify-content-center form-sign-up">
+            <form class="form-sign-up">
                 <div class="offset">
                     <div class="col-12 narrow text-center">
-                        <h1>Cadastre-se gratuitamente!</h1>
+                        <h4 class="text1cad">Cadastre-se gratuitamente!</h4>
                         <p class="lead">Ao se cadastrar você pode ser voluntário ou mesmo doar e adotar um pet!</p>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Digite seu e-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="E-mail">
                     <small id="emailHelp" class="form-text text-muted">Seu e-mail não será compartilhado.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Digite sua senha</label>
-                    <div class="ls-prefix-group">
-                        <input type="password" class="form-control" maxlength="20" placeholder="Senha">
-                        <a class="ls-label-text-prefix ls-toggle-pass ls-ico-eye" data-toggle-class="ls-ico-eye, ls-ico-eye-blocked" data-target="#password_field" href="#">
-                        </a>
+                    <div class="input-group">
+                        <input type="password" class="form-control form-control-lg rounded-0" maxlength="20" placeholder="Senha" id="pass" onkeypress="capLock(event)">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <a href="#" class="text-dark" id="icon-click">
+                                    <i class="fa fa-eye" id="icon" aria-hidden="true"></i>
+                                </a>
+                            </div>    
+                        </div>
                     </div>
                 </div>
+                <div id="divMayus" style="visibility:hidden">Tecla Caps Lock está ativa.</div> 
+                        
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Mantenha-me conectado</label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                <button type="submit" class="btn btn-primary btn-block">Cadastrar-se</button>
             </form>
             <script type="text/javascript" src="index.js"></script>
             <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
